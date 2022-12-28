@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    /* background-image: url('https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2020/03/html-gradient-background-css.png?w=993&ssl=1'); */
+    background-color: black;
+    /* background-image: url('https://i.pinimg.com/736x/23/46/4d/23464d8f0242c40820fd1c410a20db0b.jpg'); */
+    background-image: url('https://i.pinimg.com/736x/a1/a1/8a/a1a18a76a6ece158a39bc966c83b2faa.jpg');
+    background-repeat: no-repeat;
+    /* background-image: url('https://i.pinimg.com/originals/56/36/9c/56369c64e80cc98d8ab2c1dfde5ef2ce.jpg'); */
+    overflow: visible;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: url('https://wallpapercave.com/wp/wp4996995.jpg');
+        color: white;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}
+
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    float: top;
+
+}
+
+
+
+.nav ul {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        /* text-align: center; */
+
+
+    }
+}
+
+.nav ul li {
+    width: 100px;
+    margin: 0px;
+    padding: 3px;
+}
+
+.nav ul li .img {
+    border-radius: 2px;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li .img {
+        margin-right: 65px;
+    }
+
+    .nav ul li a {
+        text-align: center;
+        margin-right: 65px;
+    }
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(17, 98, 98);
+
+}
+
+.sub {
+    display: none;
+
+}
+
+.nav ul li:hover .sub {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+.nav ul li:hover .sub ul {
+    display: block;
+    margin: 10px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li:hover .sub ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+}
+
+.nav ul li:hover .sub ul li {
+    border-bottom: 1px dotted floralwhite;
+    text-align: left;
+
+}
+
+.nav ul li:hover .sub ul li:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li:hover .sub ul li:last-child {
+        border-bottom: 1px dotted floralwhite;
+        position: static;
+    }}
+
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Unbounded', cursive;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 50;
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .h1 {
+            text-align: center;
+            font-family: 'Unbounded', cursive;
+            color: aliceblue;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    }
+
+    .btn {
+        text-align: center;
+        display: inline block;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Unbounded', cursive;
+        font-size: large;
+        border-radius: 50px;
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .btn {
+            /* margin-left: 45px; */
+            display: inline block;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .par {
+        color: aliceblue;
+
+        border: solid aliceblue;
+        border-radius: 2px;
+        text-align: center;
+        margin-left: 65px;
+        margin-top: 50px;
+        margin-right: 65px;
+        display: inline block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .par {
+            display: inline block;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: solid aliceblue;
+            border-radius: 2px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+        }
+    }
